@@ -144,6 +144,8 @@ export const strings = {
     zh: "\u6211\u4eec\u5f88\u4e50\u610f\u542c\u5230\u60a8\u7684\u58f0\u97f3\u3002\u6b22\u8fce\u6765\u8bbf\u3001\u8054\u7cfb\u6211\u4eec\u6216\u5728\u7ebf\u8fde\u63a5\u3002"
   },
   "contact.address": { en: "Address", zh: "\u5730\u5740" },
+  "contact.email": { en: "Email", zh: "\u90ae\u7bb1" },
+  "contact.phone": { en: "Phone", zh: "\u7535\u8bdd" },
   "contact.emailPhone": { en: "Email & Phone", zh: "\u90ae\u7bb1\u548c\u7535\u8bdd" },
   "contact.serviceTimes": { en: "Service Times", zh: "\u805a\u4f1a\u65f6\u95f4" },
   "contact.sunday": { en: "Sunday", zh: "\u4e3b\u65e5" },
