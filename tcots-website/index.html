@@ -10,17 +10,6 @@
     /* Smooth scrolling for anchor links */
     html { scroll-behavior: smooth; }
 
-    /* Gallery hover overlay */
-    .gallery-item:hover .gallery-overlay {
-      opacity: 1;
-    }
-
-    /* Hero parallax-like subtle animation */
-    @keyframes subtlePulse {
-      0%, 100% { opacity: 0.85; }
-      50% { opacity: 1; }
-    }
-    .hero-bg { animation: subtlePulse 8s ease-in-out infinite; }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans antialiased">
@@ -34,16 +23,12 @@
          SECTION 1: HERO BANNER
          =================================================================== -->
     <section id="hero" class="relative min-h-[640px] h-[78vh] max-h-[760px] flex items-center justify-center overflow-hidden">
-      <!-- Background image (place your photo at images/hero.jpg) -->
-      <div class="absolute inset-0">
-        <img src="images/hero.jpg" alt="" class="w-full h-full object-cover" />
-        <!-- Fallback gradient if image hasn't loaded yet -->
-        <div class="absolute inset-0 bg-gradient-to-br from-[#4d9cc4] via-[#3d7a9a] to-[#1e3a4b] -z-10"></div>
-      </div>
+      <div class="absolute inset-0 bg-[#1e3a4b]"></div>
       <!-- Dark overlay for text readability -->
       <div class="absolute inset-0 bg-black/50"></div>
 
       <div class="relative z-10 text-center px-6 pb-32 sm:pb-24 max-w-3xl mx-auto">
+        <img src="images/logo.png" alt="" class="w-24 h-24 sm:w-28 sm:h-28 object-contain mx-auto mb-6" />
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-2 tracking-tight">
           The Church of The Seattleites
         </h1>
@@ -66,7 +51,7 @@
           <div class="flex items-center gap-4 sm:gap-6 min-w-0">
             <div class="shrink-0 bg-[#f2c14e] text-[#143f3a] px-3 py-2 rounded-md text-center leading-none">
               <span class="block text-xs font-bold uppercase">Sep</span>
-              <span class="block text-2xl font-black mt-1">24</span>
+              <span class="block text-2xl font-black mt-1">25</span>
             </div>
             <div class="min-w-0">
               <p id="orientation-teaser-label" class="text-xs font-bold uppercase text-[#f2c14e]">UW Fall 2026</p>
@@ -138,7 +123,7 @@
           <div>
             <p class="text-sm font-bold uppercase text-[#f2c14e] mb-3">University of Washington</p>
             <h2 id="heading-orientation" class="text-3xl sm:text-4xl font-bold text-white">UW Fall Quarter Orientation Events</h2>
-            <p id="orientation-dates" class="text-lg sm:text-xl font-semibold text-white/80 mt-3">September 24 - October 4, 2026</p>
+            <p id="orientation-dates" class="text-lg sm:text-xl font-semibold text-white/80 mt-3">September 25 - October 4, 2026</p>
           </div>
           <a id="orientation-calendar-link"
              href="calendar/fall-2026-orientation.ics"
@@ -194,52 +179,6 @@
     </section>
 
     <!-- ===================================================================
-         SECTION 5: PHOTO GALLERY PREVIEW
-         =================================================================== -->
-    <section id="gallery" class="py-20 bg-[#f8fafc]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 id="heading-gallery" class="text-3xl sm:text-4xl font-bold text-[#4d9cc4] mb-3">Gallery</h2>
-          <div class="w-16 h-1 bg-[#7ec3de] mx-auto rounded-full"></div>
-        </div>
-
-        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <!-- Populated by JS: 6 gallery photos with hover overlay -->
-        </div>
-
-        <div class="text-center mt-10">
-          <a id="link-all-gallery" href="gallery.html"
-             class="inline-block text-[#7ec3de] hover:text-[#5dade2] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#7ec3de] hover:border-[#5dade2] pb-1">
-            View Full Gallery &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         SECTION 6: LATEST VIDEO
-         =================================================================== -->
-    <section id="videos" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 id="heading-watch" class="text-3xl sm:text-4xl font-bold text-[#4d9cc4] mb-3">Watch</h2>
-          <div class="w-16 h-1 bg-[#7ec3de] mx-auto rounded-full"></div>
-        </div>
-
-        <div id="latest-video" class="max-w-4xl mx-auto">
-          <!-- Populated by JS: latest video embed + title/description -->
-        </div>
-
-        <div class="text-center mt-10">
-          <a id="link-all-videos" href="videos.html"
-             class="inline-block text-[#7ec3de] hover:text-[#5dade2] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#7ec3de] hover:border-[#5dade2] pb-1">
-            View All Videos &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================================
          SECTION 7: CONTACT / VISIT US
          =================================================================== -->
     <section id="contact" class="py-20 bg-[#f8fafc]">
@@ -284,11 +223,9 @@
     import { siteData } from './data/site.js';
     import { posts } from './data/posts.js';
     import { events } from './data/events.js';
-    import { gallery } from './data/gallery.js';
-    import { videos } from './data/videos.js';
     import { orientationSchedule } from './data/orientation-schedule.js';
     import { renderOrientationSchedule } from './js/schedule.js';
-    import { formatDate, createYouTubeEmbed, truncateText, t, localize, getLang } from './js/app.js';
+    import { formatDate, truncateText, t, localize, getLang } from './js/app.js';
 
     const heroSection = document.getElementById('hero');
     const orientationSection = document.getElementById('uw-orientation');
@@ -313,10 +250,6 @@
       document.getElementById('link-all-announcements')?.replaceChildren(document.createTextNode(t('home.viewAllAnnouncements') + ' →'));
       document.getElementById('heading-events')?.replaceChildren(document.createTextNode(t('home.upcomingEvents')));
       document.getElementById('link-all-events')?.replaceChildren(document.createTextNode(t('home.viewAllEvents') + ' →'));
-      document.getElementById('heading-gallery')?.replaceChildren(document.createTextNode(t('home.galleryPreview')));
-      document.getElementById('link-all-gallery')?.replaceChildren(document.createTextNode(t('home.viewFullGallery') + ' →'));
-      document.getElementById('heading-watch')?.replaceChildren(document.createTextNode(t('home.latestVideo')));
-      document.getElementById('link-all-videos')?.replaceChildren(document.createTextNode(t('home.viewAllVideos') + ' →'));
       document.getElementById('heading-visit')?.replaceChildren(document.createTextNode(t('home.visitUs')));
       document.getElementById('heading-uw-students')?.replaceChildren(document.createTextNode(t('home.uwStudentsTitle')));
       document.getElementById('uw-student-link')?.replaceChildren(document.createTextNode(t('home.visitStudentGroup') + ' \u2197'));
@@ -456,51 +389,6 @@
       const d = new Date(dateStr);
       if (isNaN(d.getTime())) return '--';
       return d.getDate();
-    }
-
-    // -----------------------------------------------------------------
-    // SECTION 5: Gallery Preview (flatten albums, show first 6 photos)
-    // -----------------------------------------------------------------
-    const galleryGrid = document.getElementById('gallery-grid');
-    if (galleryGrid && gallery.length > 0) {
-      const allPhotos = gallery.flatMap((album) =>
-        album.photos.map((photo) => ({ ...photo, albumName: album.album }))
-      );
-      const previewPhotos = allPhotos.slice(0, 6);
-      galleryGrid.innerHTML = previewPhotos
-        .map(
-          (photo) => `
-          <div class="gallery-item relative rounded-lg overflow-hidden shadow-md aspect-[4/3] cursor-pointer group">
-            <img
-              src="${photo.src}"
-              alt="${photo.caption || photo.alt || ''}"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              loading="lazy" />
-            <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 transition-opacity duration-300 flex items-end p-4">
-              <p class="text-white text-sm font-medium leading-snug">${photo.caption || ''}</p>
-            </div>
-          </div>`
-        )
-        .join('');
-    }
-
-    // -----------------------------------------------------------------
-    // SECTION 6: Latest Video (most recent by date)
-    // -----------------------------------------------------------------
-    const latestVideoEl = document.getElementById('latest-video');
-    if (latestVideoEl && videos.length > 0) {
-      // Sort by date descending, pick the first
-      const sorted = [...videos].sort(
-        (a, b) => new Date(b.date) - new Date(a.date)
-      );
-      const latest = sorted[0];
-      latestVideoEl.innerHTML = `
-        ${createYouTubeEmbed(latest.youtubeId)}
-        <div class="mt-6 text-center">
-          <h3 class="text-xl font-bold text-[#4d9cc4] mb-2">${localize(latest, 'title')}</h3>
-          <p class="text-sm text-gray-500 mb-3">${formatDate(latest.date)}</p>
-          <p class="text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">${localize(latest, 'description')}</p>
-        </div>`;
     }
 
     // -----------------------------------------------------------------

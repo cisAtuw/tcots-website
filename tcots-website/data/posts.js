@@ -32,7 +32,6 @@ export const posts = [
       <p>这是一个绝佳的机会，带上亲朋好友在温馨的氛围中聆听福音。欢迎所有人参加！</p>
       <p>请通过联系我们进行回复：<a href="mailto:churchoftheseattleites@gmail.com">churchoftheseattleites@gmail.com</a>。</p>
     `,
-    image: "images/posts/mid-autumn-2025.jpg",
   },
   {
     id: "gospel-meeting-april-2025",
@@ -65,7 +64,6 @@ export const posts = [
       </ul>
       <p>无论您是多年的信徒，还是从未参加过教会聚会，都欢迎您加入我们。聚会后将提供简单的茶点。</p>
     `,
-    image: "images/posts/gospel-meeting-apr-2025.jpg",
   },
   {
     id: "winter-training-2024",
@@ -96,7 +94,6 @@ export const posts = [
       <p>训练信息将涵盖圣经中某一特定的书卷或主题，帮助圣徒被真理构成，并在神圣生命中长大。</p>
       <p>如果您有兴趣参加或通过网络直播观看，请联系我们：<a href="mailto:churchoftheseattleites@gmail.com">churchoftheseattleites@gmail.com</a>，以获取报名详情。</p>
     `,
-    image: "images/posts/winter-training-2024.jpg",
   },
   {
     id: "west-coast-church-retreat-2024",
@@ -129,7 +126,6 @@ export const posts = [
       <p>活动包括职事聚会、小组讨论、户外交通和共同用餐。这是一个与邻近召会圣徒们相调并在主里得复兴的美好机会。</p>
       <p>如需报名及了解更多信息，请发送邮件至 <a href="mailto:churchoftheseattleites@gmail.com">churchoftheseattleites@gmail.com</a>。</p>
     `,
-    image: "images/posts/west-coast-retreat-2024.jpg",
   },
   {
     id: "summer-activities-2024",
@@ -162,6 +158,5 @@ export const posts = [
       </ul>
       <p>我们期待一个喜乐而丰收的夏天。请留意具体的日期和详情。如有任何问题，请联系 <a href="mailto:churchoftheseattleites@gmail.com">churchoftheseattleites@gmail.com</a>。</p>
     `,
-    image: "images/posts/summer-activities-2024.jpg",
   },
 ];

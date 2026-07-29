@@ -1,5 +1,9 @@
 # TCOTS Website - Content Management Guide
 
+The media data files are intentionally empty until verified church photos,
+testimonies, sermon recordings, and YouTube links are approved for publication.
+Do not add sample people, random image services, or demonstration video IDs.
+
 A static website for The Church of The Seattleites. All content is managed by editing JavaScript data files in the `data/` folder. No backend, no database, no build step — just edit a file and refresh your browser.
 
 ## Quick Start

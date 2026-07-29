@@ -4,15 +4,6 @@ PRODID:-//The Church of The Seattleites//UW Fall 2026 Orientation//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:gospel-preaching-on-campus-2026@tcots
-DTSTAMP:20260723T000000Z
-DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20261005
-SUMMARY:Gospel Preaching on Campus
-LOCATION:University of Washington campus
-DESCRIPTION:Fall quarter campus gospel outreach.
-END:VEVENT
-BEGIN:VEVENT
 UID:mid-dawg-days-welcome-2026@tcots
 DTSTAMP:20260723T000000Z
 DTSTART;VALUE=DATE:20260925

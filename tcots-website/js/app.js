@@ -10,8 +10,6 @@ const navItems = [
   { labelKey: 'nav.about', href: 'about.html' },
   { labelKey: 'nav.sundayService', href: 'sunday-service.html' },
   { labelKey: 'nav.events', href: 'events.html' },
-  { labelKey: 'nav.gallery', href: 'gallery.html' },
-  { labelKey: 'nav.videos', href: 'videos.html' },
   { labelKey: 'nav.resources', href: 'resources.html' },
   { labelKey: 'nav.contact', href: 'contact.html' },
   { labelKey: 'nav.uwStudents', href: siteData.studentGroup.url, external: true },

@@ -1,15 +1,5 @@
 export const orientationSchedule = [
   {
-    id: "gospel-preaching-on-campus",
-    title: "Gospel Preaching on Campus",
-    title_zh: "\u6821\u56ed\u798f\u97f3\u4f20\u626c",
-    date: "2026-09-24",
-    endDate: "2026-10-04",
-    location: "University of Washington campus",
-    description: "Fall quarter campus gospel outreach.",
-    description_zh: "\u79cb\u5b63\u5b66\u671f\u6821\u56ed\u798f\u97f3\u884c\u52a8\u3002",
-  },
-  {
     id: "mid-dawg-days-welcome",
     title: "Mid-Dawg Days: New Students Welcoming",
     title_zh: "Mid-Dawg Days\uff1a\u65b0\u751f\u6b22\u8fce\u6d3b\u52a8",

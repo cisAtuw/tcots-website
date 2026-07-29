@@ -39,7 +39,7 @@ export const strings = {
   "home.uwStudentsTitle": { en: "Campus Fellowship at UW", zh: "UW \u6821\u56ed\u4ea4\u901a" },
   "home.visitStudentGroup": { en: "Visit Christians in Seattle", zh: "\u8bbf\u95ee Christians in Seattle" },
   "home.orientationSchedule": { en: "UW Fall Quarter Orientation Events", zh: "UW \u79cb\u5b63\u5b66\u671f\u8fce\u65b0\u6d3b\u52a8" },
-  "home.orientationDates": { en: "September 24 - October 4, 2026", zh: "2026 \u5e74 9 \u6708 24 \u65e5 - 10 \u6708 4 \u65e5" },
+  "home.orientationDates": { en: "September 25 - October 4, 2026", zh: "2026 \u5e74 9 \u6708 25 \u65e5 - 10 \u6708 4 \u65e5" },
   "home.addAllCalendar": { en: "Add all to calendar", zh: "\u5168\u90e8\u6dfb\u52a0\u5230\u65e5\u5386" },
   "home.orientationTeaserLabel": { en: "UW Fall 2026", zh: "UW 2026 \u79cb\u5b63" },
   "home.orientationTeaserTitle": { en: "Orientation events through October 4", zh: "\u8fce\u65b0\u6d3b\u52a8\u6301\u7eed\u81f3 10 \u6708 4 \u65e5" },

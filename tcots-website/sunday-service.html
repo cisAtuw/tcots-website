@@ -65,7 +65,7 @@
     </section>
 
     <!-- Latest Sermon -->
-    <section class="py-16 px-4">
+    <section id="latest-sermon-section" class="hidden py-16 px-4">
       <div class="max-w-4xl mx-auto">
         <h2 id="heading-latest-sermon" class="text-3xl font-bold text-[#4d9cc4] mb-2 text-center">Latest Sermon</h2>
         <div class="w-16 h-1 bg-[#7ec3de] mx-auto mb-10"></div>
@@ -76,7 +76,7 @@
     </section>
 
     <!-- Sermon Archive -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section id="sermon-archive-section" class="hidden py-16 px-4 bg-gray-50">
       <div class="max-w-6xl mx-auto">
         <h2 id="heading-sermon-archive" class="text-3xl font-bold text-[#4d9cc4] mb-2 text-center">Sermon Archive</h2>
         <div class="w-16 h-1 bg-[#7ec3de] mx-auto mb-10"></div>
@@ -280,9 +280,13 @@
       document.getElementById('heading-latest-sermon').textContent = t('sundayService.latestSermon');
       document.getElementById('heading-sermon-archive').textContent = t('sundayService.sermonArchive');
 
-      renderLatestSermon();
-      buildFilters();
-      renderArchive(sermons);
+      if (sermons.length > 0) {
+        document.getElementById('latest-sermon-section').classList.remove('hidden');
+        document.getElementById('sermon-archive-section').classList.remove('hidden');
+        renderLatestSermon();
+        buildFilters();
+        renderArchive(sermons);
+      }
     });
   </script>
 </body>
