@@ -45,13 +45,15 @@ function googleCalendarUrl(event) {
 export function renderOrientationSchedule(container, events) {
   if (!container) return;
 
-  const googleLabel = getLang() === 'zh' ? '\u6dfb\u52a0\u5230 Google \u65e5\u5386' : 'Add to Google Calendar';
+  const googleLabel = getLang() === 'zh' ? '添加到 Google 日历' : 'Add to Google Calendar';
 
   container.innerHTML = events.map((event) => `
     <article class="schedule-item border-t border-white/25 pt-5 pb-3">
       <p class="text-sm font-bold uppercase text-[#f2c14e] mb-2">${formatDateRange(event)}</p>
       <h3 class="text-xl font-bold text-white leading-snug mb-2">${localize(event, 'title')}</h3>
-      <p class="text-sm text-white/70 mb-4">${localize(event, 'description')}</p>
+      <p class="text-sm text-white/70 mb-2">${localize(event, 'description')}</p>
+      <p class="text-sm text-white/80 mb-1"><span class="font-bold text-[#f2c14e]">${getLang() === 'zh' ? '时间：' : 'Time: '}</span>${localize(event, 'time') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
+      <p class="text-sm text-white/80 mb-4"><span class="font-bold text-[#f2c14e]">${getLang() === 'zh' ? '地点：' : 'Location: '}</span>${localize(event, 'location') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
       <a href="${googleCalendarUrl(event)}"
          target="_blank"
          rel="noopener noreferrer"
