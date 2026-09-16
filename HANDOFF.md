@@ -47,3 +47,8 @@
 ## 有权限的人
 - `mileszhanghao`（owner）
 - `yiyliu-glitch`（collaborator，待接受邀请）
+
+
+## 关于 Guestbook（留言板）功能
+
+Christians in Seattle at UW（学生社团）网站已经移除了 Guestbook 导航入口，因为学生社团不需要这个功能。如果教会网站（这个仓库）想启用留言板，可以参考那边仓库（christians-in-seattle-uw）里现成的实现：`guestbook.html`、`js/guestbook.js`，以及 `data/site.js` 里的 `guestbook` 配置项（Google Form 嵌入链接 + 已发布 Google Sheet 的 CSV 链接）。把这几部分迁移过来、接上自己的 Google Form/Sheet 即可复用。
