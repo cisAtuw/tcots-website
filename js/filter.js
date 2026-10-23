@@ -32,10 +32,10 @@ export function initFilter(containerSelector, itemSelector, filterBtnSelector) {
 
       // Update active button state
       buttons.forEach((b) => {
-        b.classList.remove('filter-btn-active', 'bg-[#4d9cc4]', 'text-white');
+        b.classList.remove('filter-btn-active', 'bg-[#4b2e83]', 'text-white');
         b.classList.add('bg-gray-200', 'text-gray-700');
       });
-      btn.classList.add('filter-btn-active', 'bg-[#4d9cc4]', 'text-white');
+      btn.classList.add('filter-btn-active', 'bg-[#4b2e83]', 'text-white');
       btn.classList.remove('bg-gray-200', 'text-gray-700');
 
       // Filter items
@@ -75,7 +75,7 @@ export function initFilter(containerSelector, itemSelector, filterBtnSelector) {
   // Set the first button (usually "All") as active by default
   if (buttons.length > 0) {
     const firstBtn = buttons[0];
-    firstBtn.classList.add('filter-btn-active', 'bg-[#4d9cc4]', 'text-white');
+    firstBtn.classList.add('filter-btn-active', 'bg-[#4b2e83]', 'text-white');
     firstBtn.classList.remove('bg-gray-200', 'text-gray-700');
   }
 }
