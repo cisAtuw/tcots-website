@@ -49,15 +49,15 @@ export function renderOrientationSchedule(container, events) {
 
   container.innerHTML = events.map((event) => `
     <article class="schedule-item border-t border-white/25 pt-5 pb-3">
-      <p class="text-sm font-bold uppercase text-[#f2c14e] mb-2">${formatDateRange(event)}</p>
+      <p class="text-sm font-bold uppercase text-[#e8c547] mb-2">${formatDateRange(event)}</p>
       <h3 class="text-xl font-bold text-white leading-snug mb-2">${localize(event, 'title')}</h3>
       <p class="text-sm text-white/70 mb-2">${localize(event, 'description')}</p>
-      <p class="text-sm text-white/80 mb-1"><span class="font-bold text-[#f2c14e]">${getLang() === 'zh' ? '时间：' : 'Time: '}</span>${localize(event, 'time') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
-      <p class="text-sm text-white/80 mb-4"><span class="font-bold text-[#f2c14e]">${getLang() === 'zh' ? '地点：' : 'Location: '}</span>${localize(event, 'location') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
+      <p class="text-sm text-white/80 mb-1"><span class="font-bold text-[#e8c547]">${getLang() === 'zh' ? '时间：' : 'Time: '}</span>${localize(event, 'time') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
+      <p class="text-sm text-white/80 mb-4"><span class="font-bold text-[#e8c547]">${getLang() === 'zh' ? '地点：' : 'Location: '}</span>${localize(event, 'location') || (getLang() === 'zh' ? '待确认' : 'To be confirmed')}</p>
       <a href="${googleCalendarUrl(event)}"
          target="_blank"
          rel="noopener noreferrer"
-         class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-[#f2c14e] focus:outline-none focus:ring-2 focus:ring-[#f2c14e] focus:ring-offset-2 focus:ring-offset-[#143f3a] rounded-sm">
+         class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-[#e8c547] focus:outline-none focus:ring-2 focus:ring-[#e8c547] focus:ring-offset-2 focus:ring-offset-[#2d1b4e] rounded-sm">
         <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
         </svg>
