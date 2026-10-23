@@ -12,7 +12,7 @@
   <main class="min-h-screen pt-20">
 
     <!-- Page Header -->
-    <section class="bg-[#4d9cc4] text-white py-16 px-4 text-center">
+    <section class="bg-[#4b2e83] text-white py-16 px-4 text-center">
       <h1 id="page-title" class="text-4xl md:text-5xl font-bold mb-4">Events</h1>
       <p id="page-subtitle" class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
         Connect, serve, and celebrate together. See what's coming up and what we've been doing.
@@ -20,17 +20,17 @@
     </section>
 
     <!-- UW Fall Quarter Orientation Schedule -->
-    <section id="uw-orientation" class="py-16 px-4 bg-[#143f3a] text-white">
+    <section id="uw-orientation" class="py-16 px-4 bg-[#2d1b4e] text-white">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <p class="text-sm font-bold uppercase text-[#f2c14e] mb-3">University of Washington</p>
+            <p class="text-sm font-bold uppercase text-[#e8c547] mb-3">University of Washington</p>
             <h2 id="heading-orientation" class="text-3xl font-bold text-white">UW Fall Quarter Orientation Events</h2>
             <p id="orientation-dates" class="text-lg font-semibold text-white/80 mt-3">September 25 - October 4, 2026</p>
           </div>
           <a href="calendar/fall-2026-orientation.ics"
              download
-             class="inline-flex items-center justify-center gap-2 bg-[#f2c14e] text-[#143f3a] hover:bg-white px-5 py-3 rounded-md font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2c14e] focus:ring-offset-2 focus:ring-offset-[#143f3a]">
+             class="inline-flex items-center justify-center gap-2 bg-[#e8c547] text-[#2d1b4e] hover:bg-white px-5 py-3 rounded-md font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-[#e8c547] focus:ring-offset-2 focus:ring-offset-[#2d1b4e]">
             <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
@@ -44,8 +44,8 @@
     <!-- Upcoming Events -->
     <section class="py-16 px-4">
       <div class="max-w-5xl mx-auto">
-        <h2 id="heading-upcoming" class="text-3xl font-bold text-[#4d9cc4] mb-2 text-center">Upcoming Events</h2>
-        <div class="w-16 h-1 bg-[#7ec3de] mx-auto mb-10"></div>
+        <h2 id="heading-upcoming" class="text-3xl font-bold text-[#4b2e83] mb-2 text-center">Upcoming Events</h2>
+        <div class="w-16 h-1 bg-[#e8c547] mx-auto mb-10"></div>
         <div id="upcoming-events" class="space-y-6">
           <p class="text-center text-gray-500">Loading events...</p>
         </div>
@@ -55,8 +55,8 @@
     <!-- Past Events -->
     <section class="py-16 px-4 bg-gray-50">
       <div class="max-w-6xl mx-auto">
-        <h2 id="heading-past" class="text-3xl font-bold text-[#4d9cc4] mb-2 text-center">Past Events</h2>
-        <div class="w-16 h-1 bg-[#7ec3de] mx-auto mb-10"></div>
+        <h2 id="heading-past" class="text-3xl font-bold text-[#4b2e83] mb-2 text-center">Past Events</h2>
+        <div class="w-16 h-1 bg-[#e8c547] mx-auto mb-10"></div>
         <div id="past-events">
           <p class="text-center text-gray-500">Loading past events...</p>
         </div>
@@ -115,11 +115,11 @@
       const md = getMonthDay(event.date);
 
       const dateBadgeHTML = md
-        ? `<div class="flex-shrink-0 w-24 bg-[#7ec3de] text-white flex flex-col items-center justify-center p-4">
+        ? `<div class="flex-shrink-0 w-24 bg-[#e8c547] text-white flex flex-col items-center justify-center p-4">
              <span class="text-sm font-bold uppercase tracking-wide">${md.month}</span>
              <span class="text-3xl font-extrabold leading-none">${md.day}</span>
            </div>`
-        : `<div class="flex-shrink-0 w-24 bg-[#7ec3de] text-white flex flex-col items-center justify-center p-4">
+        : `<div class="flex-shrink-0 w-24 bg-[#e8c547] text-white flex flex-col items-center justify-center p-4">
              <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
              </svg>
@@ -132,7 +132,7 @@
           ${dateBadgeHTML}
           <!-- Content -->
           <div class="p-6 flex-1">
-            <h3 class="text-xl font-bold text-[#4d9cc4] mb-1">${localize(event, 'title')}</h3>
+            <h3 class="text-xl font-bold text-[#4b2e83] mb-1">${localize(event, 'title')}</h3>
             <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-500 mb-3">
               ${event.time ? `
                 <span class="flex items-center gap-1">
@@ -163,8 +163,8 @@
     function renderPastCard(event) {
       const imageHTML = event.image
         ? `<img src="${event.image}" alt="${localize(event, 'title')}" class="w-full h-44 object-cover" loading="lazy">`
-        : `<div class="w-full h-44 bg-gradient-to-br from-[#4d9cc4] to-[#3d7a9a] flex items-center justify-center">
-             <svg class="w-12 h-12 text-[#7ec3de]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        : `<div class="w-full h-44 bg-gradient-to-br from-[#4b2e83] to-[#2d1b4e] flex items-center justify-center">
+             <svg class="w-12 h-12 text-[#4b2e83]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
              </svg>
@@ -174,8 +174,8 @@
         <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
           ${imageHTML}
           <div class="p-5">
-            <h3 class="font-bold text-[#4d9cc4] text-lg mb-1">${localize(event, 'title')}</h3>
-            <p class="text-[#7ec3de] text-sm font-medium mb-2">${formatDate(event.date)}</p>
+            <h3 class="font-bold text-[#4b2e83] text-lg mb-1">${localize(event, 'title')}</h3>
+            <p class="text-[#4b2e83] text-sm font-medium mb-2">${formatDate(event.date)}</p>
             ${event.description ? `<p class="text-gray-500 text-sm line-clamp-3">${localize(event, 'description')}</p>` : ''}
           </div>
         </div>
@@ -240,7 +240,7 @@
       for (const [monthYear, monthEvents] of Object.entries(grouped)) {
         html += `
           <div class="mb-12">
-            <h3 class="text-xl font-bold text-[#4d9cc4] mb-6 border-b-2 border-[#7ec3de]/30 pb-2">${monthYear}</h3>
+            <h3 class="text-xl font-bold text-[#4b2e83] mb-6 border-b-2 border-[#e8c547]/30 pb-2">${monthYear}</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               ${monthEvents.map(renderPastCard).join('')}
             </div>
