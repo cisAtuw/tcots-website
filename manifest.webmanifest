@@ -1,0 +1,13 @@
+{
+  "name": "The Church of The Seattleites",
+  "short_name": "TCOTS",
+  "description": "A place of worship, community, and hope.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f5f8",
+  "theme_color": "#4b2e83",
+  "icons": [
+    { "src": "images/logo.png", "sizes": "500x500", "type": "image/png", "purpose": "any" }
+  ]
+}
