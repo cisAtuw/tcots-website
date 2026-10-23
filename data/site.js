@@ -12,7 +12,7 @@ export const siteData = {
 
   studentGroup: {
     name: "Christians in Seattle at UW",
-    url: "https://christiansinseattle.org",
+    url: "https://cisuw.com",
     description:
       "Our University of Washington student community gathers for Bible reading, fellowship, and campus events. Students and friends are welcome.",
   },
