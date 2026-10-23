@@ -1,9 +1,9 @@
 /* ==========================================================================
    custom.css - The Church of The Seattleites  |  Custom styles
    Color palette:
-     Blue primary   : #4d9cc4
-     Light blue accent : #7ec3de
-     Light bg       : #f8fafc
+     Blue primary   : #4b2e83
+     Light blue accent : #e8c547
+     Light bg       : #f8f5f8
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -22,9 +22,9 @@ html {
 body {
   margin: 0;
   padding-top: 4rem; /* account for fixed nav (h-16 = 4rem) */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   color: #1f2937;
-  background-color: #ffffff;
+  background-color: #f8f5f8;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,7 @@ footer {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.25;
-  color: #4d9cc4;
+  color: #4b2e83;
 }
 
 h1 { font-size: 2.5rem; }
@@ -169,7 +169,7 @@ h4 { font-size: 1.25rem; }
 }
 
 .lightbox-close:hover {
-  color: #7ec3de;
+  color: #e8c547;
 }
 
 .lightbox-nav {
@@ -192,7 +192,7 @@ h4 { font-size: 1.25rem; }
 
 .lightbox-nav:hover {
   background: rgba(212, 168, 83, 0.35);
-  color: #7ec3de;
+  color: #e8c547;
 }
 
 .lightbox-prev {
@@ -273,7 +273,7 @@ h4 { font-size: 1.25rem; }
 }
 
 .section-alt {
-  background-color: #f8fafc;
+  background-color: #f8f5f8;
 }
 
 .section-heading {
@@ -296,22 +296,22 @@ h4 { font-size: 1.25rem; }
    Pink accent helpers
    -------------------------------------------------------------------------- */
 .text-pink-accent {
-  color: #7ec3de;
+  color: #e8c547;
 }
 
 .bg-pink-accent {
-  background-color: #7ec3de;
+  background-color: #e8c547;
 }
 
 .border-pink-accent {
-  border-color: #7ec3de;
+  border-color: #e8c547;
 }
 
 /* Primary button */
 .btn-primary {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #7ec3de;
+  background-color: #e8c547;
   color: #ffffff;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -320,7 +320,7 @@ h4 { font-size: 1.25rem; }
 }
 
 .btn-primary:hover {
-  background-color: #5dade2;
+  background-color: #c9a62a;
   transform: translateY(-1px);
 }
 
@@ -339,14 +339,14 @@ h4 { font-size: 1.25rem; }
 
 .btn-secondary:hover {
   background-color: #ffffff;
-  color: #4d9cc4;
+  color: #4b2e83;
 }
 
 /* --------------------------------------------------------------------------
    Filter button active state
    -------------------------------------------------------------------------- */
 .filter-btn-active {
-  background-color: #4d9cc4 !important;
+  background-color: #4b2e83 !important;
   color: #ffffff !important;
 }
 
