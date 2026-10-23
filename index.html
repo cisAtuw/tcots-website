@@ -12,7 +12,7 @@
 
   </style>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased">
+<body class="bg-[#f8f5f8] text-gray-800 font-sans antialiased">
 
   <!-- ===== NAVIGATION (injected by app.js) ===== -->
   <div id="nav-container"></div>
@@ -22,12 +22,10 @@
     <!-- ===================================================================
          SECTION 1: HERO BANNER
          =================================================================== -->
-    <section id="hero" class="relative min-h-[640px] h-[78vh] max-h-[760px] flex items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 bg-[#1e3a4b]"></div>
-      <!-- Dark overlay for text readability -->
-      <div class="absolute inset-0 bg-black/50"></div>
+    <section id="hero" class="relative min-h-[520px] py-20 flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#4b2e83] to-[#2d1b4e]"></div>
 
-      <div class="relative z-10 text-center px-6 pb-32 sm:pb-24 max-w-3xl mx-auto">
+      <div class="relative z-10 text-center px-6  max-w-3xl mx-auto">
         <img src="images/logo.png" alt="" class="w-24 h-24 sm:w-28 sm:h-28 object-contain mx-auto mb-6" />
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-2 tracking-tight">
           The Church of The Seattleites
@@ -36,35 +34,15 @@
         <p id="hero-verse" class="text-lg sm:text-xl text-gray-200 italic leading-relaxed mb-4">
           &ldquo;So then you are no longer strangers and aliens, but you are fellow citizens with the saints and members of the household of God.&rdquo;
         </p>
-        <p id="hero-verse-ref" class="text-sm text-[#7ec3de] font-medium mb-10 tracking-wide">
+        <p id="hero-verse-ref" class="text-sm text-[#e8c547] font-medium mb-10 tracking-wide">
           &mdash; Ephesians 2:19
         </p>
         <a id="hero-learn-more" href="#who-we-are"
-           class="inline-block border-2 border-[#7ec3de] text-[#7ec3de] hover:bg-[#7ec3de] hover:text-[#4d9cc4] px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-widest transition-all duration-300">
+           class="inline-block border-2 border-[#e8c547] text-[#e8c547] hover:bg-[#e8c547] hover:text-[#4b2e83] px-8 py-3 rounded-full text-sm font-semibold uppercase tracking-widest transition-all duration-300">
           Learn More
         </a>
       </div>
 
-      <!-- First-screen orientation announcement -->
-      <div class="absolute inset-x-0 bottom-0 z-20 bg-[#143f3a] border-t border-white/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div class="flex items-center gap-4 sm:gap-6 min-w-0">
-            <div class="shrink-0 bg-[#f2c14e] text-[#143f3a] px-3 py-2 rounded-md text-center leading-none">
-              <span class="block text-xs font-bold uppercase">Sep</span>
-              <span class="block text-2xl font-black mt-1">25</span>
-            </div>
-            <div class="min-w-0">
-              <p id="orientation-teaser-label" class="text-xs font-bold uppercase text-[#f2c14e]">UW Fall 2026</p>
-              <p id="orientation-teaser-title" class="text-lg sm:text-xl font-bold text-white leading-tight mt-1">Orientation events through October 4</p>
-            </div>
-          </div>
-          <a id="orientation-teaser-link" href="#uw-orientation"
-             class="inline-flex items-center justify-center gap-2 bg-white text-[#143f3a] hover:bg-[#f2c14e] px-5 py-3 rounded-md font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2c14e] focus:ring-offset-2 focus:ring-offset-[#143f3a] whitespace-nowrap">
-            View full schedule
-            <span aria-hidden="true">&#8595;</span>
-          </a>
-        </div>
-      </div>
     </section>
 
     <!-- ===================================================================
@@ -75,8 +53,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           <!-- Who We Are card -->
-          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#7ec3de] p-8 sm:p-10">
-            <h2 id="heading-who-we-are" class="text-3xl font-bold text-[#4d9cc4] mb-6">Who We Are</h2>
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#e8c547] p-8 sm:p-10">
+            <h2 id="heading-who-we-are" class="text-3xl font-bold text-[#4b2e83] mb-6">Who We Are</h2>
             <p id="mission-text" class="text-gray-600 leading-relaxed text-base">
               <!-- Populated by JS from siteData.mission -->
             </p>
@@ -86,8 +64,8 @@
           </div>
 
           <!-- What We Believe card -->
-          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#7ec3de] p-8 sm:p-10">
-            <h2 id="heading-what-we-believe" class="text-3xl font-bold text-[#4d9cc4] mb-6">What We Believe</h2>
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#e8c547] p-8 sm:p-10">
+            <h2 id="heading-what-we-believe" class="text-3xl font-bold text-[#4b2e83] mb-6">What We Believe</h2>
             <ul id="beliefs-list" class="space-y-4">
               <!-- Populated by JS from siteData.beliefs -->
             </ul>
@@ -98,55 +76,32 @@
     </section>
 
     <!-- UW Student Community -->
-    <section class="py-14 bg-[#eaf5fa]">
+    <section class="py-14 bg-[#f1ecf7]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-7">
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-widest text-[#3d7a9a] mb-2">University of Washington</p>
-          <h2 id="heading-uw-students" class="text-3xl font-bold text-[#4d9cc4] mb-3">Campus Fellowship at UW</h2>
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#2d1b4e] mb-2">University of Washington</p>
+          <h2 id="heading-uw-students" class="text-3xl font-bold text-[#4b2e83] mb-3">Campus Fellowship at UW</h2>
           <p id="uw-student-description" class="text-gray-700 leading-relaxed"></p>
         </div>
         <a id="uw-student-link"
-           href="https://christiansinseattle.org"
+           href="https://cisuw.com"
            target="_blank"
            rel="noopener noreferrer"
-           class="inline-flex items-center justify-center gap-2 bg-[#4d9cc4] hover:bg-[#3d7a9a] text-white px-6 py-3 rounded-md font-semibold transition-colors whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4d9cc4] focus:ring-offset-2">
+           class="inline-flex items-center justify-center gap-2 bg-[#4b2e83] hover:bg-[#2d1b4e] text-white px-6 py-3 rounded-md font-semibold transition-colors whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4b2e83] focus:ring-offset-2">
           Visit Christians in Seattle
           <span aria-hidden="true">&#8599;</span>
         </a>
       </div>
     </section>
 
-    <!-- UW Fall Quarter Orientation Schedule -->
-    <section id="uw-orientation" class="py-20 bg-[#143f3a] text-white scroll-mt-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-          <div>
-            <p class="text-sm font-bold uppercase text-[#f2c14e] mb-3">University of Washington</p>
-            <h2 id="heading-orientation" class="text-3xl sm:text-4xl font-bold text-white">UW Fall Quarter Orientation Events</h2>
-            <p id="orientation-dates" class="text-lg sm:text-xl font-semibold text-white/80 mt-3">September 25 - October 4, 2026</p>
-          </div>
-          <a id="orientation-calendar-link"
-             href="calendar/fall-2026-orientation.ics"
-             download
-             class="inline-flex items-center justify-center gap-2 bg-[#f2c14e] text-[#143f3a] hover:bg-white px-5 py-3 rounded-md font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2c14e] focus:ring-offset-2 focus:ring-offset-[#143f3a]">
-            <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-            <span id="orientation-calendar-label">Add all to calendar</span>
-          </a>
-        </div>
-        <div id="orientation-schedule" class="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-8"></div>
-      </div>
-    </section>
-
     <!-- ===================================================================
          SECTION 3: ANNOUNCEMENTS & EVENTS
          =================================================================== -->
-    <section id="announcements" class="py-20 bg-[#f8fafc]">
+    <section id="announcements" class="py-20 bg-[#f8f5f8]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 id="heading-announcements" class="text-3xl sm:text-4xl font-bold text-[#4d9cc4] mb-3">Announcements &amp; Events</h2>
-          <div class="w-16 h-1 bg-[#7ec3de] mx-auto rounded-full"></div>
+          <h2 id="heading-announcements" class="text-3xl sm:text-4xl font-bold text-[#4b2e83] mb-3">Announcements &amp; Events</h2>
+          <div class="w-16 h-1 bg-[#e8c547] mx-auto rounded-full"></div>
         </div>
 
         <!-- Announcements -->
@@ -156,21 +111,21 @@
 
         <div class="text-center mt-8">
           <a id="link-all-announcements" href="announcements.html"
-             class="inline-block text-[#7ec3de] hover:text-[#5dade2] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#7ec3de] hover:border-[#5dade2] pb-1">
+             class="inline-block text-[#4b2e83] hover:text-[#2d1b4e] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#e8c547] hover:border-[#4b2e83] pb-1">
             View All Announcements &rarr;
           </a>
         </div>
 
         <!-- Events -->
         <div class="mt-16">
-          <h3 id="heading-events" class="text-2xl sm:text-3xl font-bold text-[#4d9cc4] mb-8 text-center">Upcoming Events</h3>
+          <h3 id="heading-events" class="text-2xl sm:text-3xl font-bold text-[#4b2e83] mb-8 text-center">Upcoming Events</h3>
           <div id="events-list" class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Populated by JS: upcoming event cards -->
           </div>
 
           <div class="text-center mt-8">
             <a id="link-all-events" href="events.html"
-               class="inline-block text-[#7ec3de] hover:text-[#5dade2] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#7ec3de] hover:border-[#5dade2] pb-1">
+               class="inline-block text-[#4b2e83] hover:text-[#2d1b4e] font-semibold text-sm uppercase tracking-wider transition-colors border-b-2 border-[#e8c547] hover:border-[#4b2e83] pb-1">
               View All Events &rarr;
             </a>
           </div>
@@ -181,11 +136,11 @@
     <!-- ===================================================================
          SECTION 7: CONTACT / VISIT US
          =================================================================== -->
-    <section id="contact" class="py-20 bg-[#f8fafc]">
+    <section id="contact" class="py-20 bg-[#f8f5f8]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 id="heading-visit" class="text-3xl sm:text-4xl font-bold text-[#4d9cc4] mb-3">Visit Us</h2>
-          <div class="w-16 h-1 bg-[#7ec3de] mx-auto rounded-full"></div>
+          <h2 id="heading-visit" class="text-3xl sm:text-4xl font-bold text-[#4b2e83] mb-3">Visit Us</h2>
+          <div class="w-16 h-1 bg-[#e8c547] mx-auto rounded-full"></div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -269,7 +224,7 @@
     const studentLink = document.getElementById('uw-student-link');
     if (studentLink) studentLink.href = siteData.studentGroup.url;
 
-    renderOrientationSchedule(document.getElementById('orientation-schedule'), orientationSchedule);
+    const orientEl = document.getElementById('orientation-schedule'); if (orientEl) renderOrientationSchedule(orientEl, orientationSchedule);
 
     // -----------------------------------------------------------------
     // SECTION 2: Who We Are / What We Believe
@@ -290,9 +245,9 @@
         .map(
           (belief) => `
           <li class="flex items-start space-x-3">
-            <span class="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-[#7ec3de]"></span>
+            <span class="mt-1 flex-shrink-0 w-2 h-2 rounded-full bg-[#e8c547]"></span>
             <div>
-              <h3 class="font-semibold text-[#4d9cc4] text-sm">${localize(belief, 'title')}</h3>
+              <h3 class="font-semibold text-[#4b2e83] text-sm">${localize(belief, 'title')}</h3>
               <p class="text-gray-600 text-sm mt-1">${localize(belief, 'description')}</p>
             </div>
           </li>`
@@ -320,11 +275,11 @@
               </div>
             ` : ''}
             <div class="p-6 flex flex-col flex-1">
-              <p class="text-xs text-[#7ec3de] font-semibold uppercase tracking-wider mb-2">${formatDate(post.date)}</p>
-              <h3 class="text-lg font-bold text-[#4d9cc4] mb-2 leading-snug">${localize(post, 'title')}</h3>
+              <p class="text-xs text-[#4b2e83] font-semibold uppercase tracking-wider mb-2">${formatDate(post.date)}</p>
+              <h3 class="text-lg font-bold text-[#4b2e83] mb-2 leading-snug">${localize(post, 'title')}</h3>
               <p class="text-gray-600 text-sm leading-relaxed flex-1">${truncateText(localize(post, 'excerpt'), 140)}</p>
               <a href="announcements.html#${post.slug || post.id}"
-                 class="mt-4 inline-block text-[#7ec3de] hover:text-[#5dade2] font-semibold text-sm transition-colors">
+                 class="mt-4 inline-block text-[#4b2e83] hover:text-[#2d1b4e] font-semibold text-sm transition-colors">
                 ${t('common.readMore')} &rarr;
               </a>
             </div>
@@ -342,20 +297,20 @@
       eventsList.innerHTML = upcomingEvents
         .map(
           (event) => `
-          <article class="bg-[#f8fafc] rounded-xl p-6 flex items-start space-x-5 hover:shadow-md transition-shadow duration-300 border border-gray-100">
+          <article class="bg-[#f8f5f8] rounded-xl p-6 flex items-start space-x-5 hover:shadow-md transition-shadow duration-300 border border-gray-100">
             <!-- Date badge -->
             ${event.recurring
-              ? `<div class="flex-shrink-0 w-16 h-16 bg-[#4d9cc4] rounded-lg flex flex-col items-center justify-center text-white shadow px-1">
+              ? `<div class="flex-shrink-0 w-16 h-16 bg-[#4b2e83] rounded-lg flex flex-col items-center justify-center text-white shadow px-1">
                    <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
                    <span class="text-[10px] font-bold uppercase leading-tight text-center">${t('common.weekly')}</span>
                  </div>`
-              : `<div class="flex-shrink-0 w-16 h-16 bg-[#4d9cc4] rounded-lg flex flex-col items-center justify-center text-white shadow">
-                   <span class="text-xs font-medium uppercase text-[#7ec3de]">${getMonthAbbr(event.date)}</span>
+              : `<div class="flex-shrink-0 w-16 h-16 bg-[#4b2e83] rounded-lg flex flex-col items-center justify-center text-white shadow">
+                   <span class="text-xs font-medium uppercase text-[#4b2e83]">${getMonthAbbr(event.date)}</span>
                    <span class="text-xl font-bold leading-none">${getDayNum(event.date)}</span>
                  </div>`
             }
             <div class="flex-1 min-w-0">
-              <h3 class="text-lg font-bold text-[#4d9cc4] mb-1">${localize(event, 'title')}</h3>
+              <h3 class="text-lg font-bold text-[#4b2e83] mb-1">${localize(event, 'title')}</h3>
               <p class="text-sm text-gray-600 leading-relaxed mb-2">${truncateText(localize(event, 'description'), 160)}</p>
               <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
                 ${event.date ? `<span class="flex items-center space-x-1">
@@ -401,33 +356,33 @@
       contactInfo.innerHTML = `
         <!-- Address -->
         <div class="flex items-start space-x-4">
-          <div class="flex-shrink-0 w-12 h-12 bg-[#4d9cc4] rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-[#7ec3de]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <div class="flex-shrink-0 w-12 h-12 bg-[#4b2e83] rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-[#4b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <div>
-            <h3 class="font-semibold text-[#4d9cc4] text-lg mb-1">${t('contact.address')}</h3>
+            <h3 class="font-semibold text-[#4b2e83] text-lg mb-1">${t('contact.address')}</h3>
             <p class="text-gray-600">${siteData.address}</p>
           </div>
         </div>
 
         <!-- Email -->
         <div class="flex items-start space-x-4">
-          <div class="flex-shrink-0 w-12 h-12 bg-[#4d9cc4] rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-[#7ec3de]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <div class="flex-shrink-0 w-12 h-12 bg-[#4b2e83] rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-[#4b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
           <div>
-            <h3 class="font-semibold text-[#4d9cc4] text-lg mb-1">${t('contact.email')}</h3>
-            <a href="mailto:${siteData.email}" class="text-[#7ec3de] hover:text-[#5dade2] transition-colors">${siteData.email}</a>
+            <h3 class="font-semibold text-[#4b2e83] text-lg mb-1">${t('contact.email')}</h3>
+            <a href="mailto:${siteData.email}" class="text-[#4b2e83] hover:text-[#2d1b4e] transition-colors">${siteData.email}</a>
           </div>
         </div>
 
         <!-- Service Times -->
         <div class="flex items-start space-x-4">
-          <div class="flex-shrink-0 w-12 h-12 bg-[#4d9cc4] rounded-lg flex items-center justify-center">
-            <svg class="w-6 h-6 text-[#7ec3de]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div class="flex-shrink-0 w-12 h-12 bg-[#4b2e83] rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-[#4b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <div>
-            <h3 class="font-semibold text-[#4d9cc4] text-lg mb-1">${t('contact.serviceTimes')}</h3>
+            <h3 class="font-semibold text-[#4b2e83] text-lg mb-1">${t('contact.serviceTimes')}</h3>
             <p class="text-gray-600">${t('contact.sunday')}: ${siteData.serviceTimes.sunday}</p>
             <p class="text-gray-600">${t('contact.wednesday')}: ${siteData.serviceTimes.wednesday}</p>
           </div>
@@ -436,12 +391,12 @@
         ${siteData.phone ? `
           <!-- Phone -->
           <div class="flex items-start space-x-4">
-            <div class="flex-shrink-0 w-12 h-12 bg-[#4d9cc4] rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-[#7ec3de]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <div class="flex-shrink-0 w-12 h-12 bg-[#4b2e83] rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-[#4b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             </div>
             <div>
-              <h3 class="font-semibold text-[#4d9cc4] text-lg mb-1">${t('contact.phone')}</h3>
-              <a href="tel:${siteData.phone.replace(/[^+\d]/g, '')}" class="text-[#7ec3de] hover:text-[#5dade2] transition-colors">${siteData.phone}</a>
+              <h3 class="font-semibold text-[#4b2e83] text-lg mb-1">${t('contact.phone')}</h3>
+              <a href="tel:${siteData.phone.replace(/[^+\d]/g, '')}" class="text-[#4b2e83] hover:text-[#2d1b4e] transition-colors">${siteData.phone}</a>
             </div>
           </div>
         ` : ''}
